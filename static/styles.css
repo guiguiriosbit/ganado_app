@@ -1,0 +1,120 @@
+/* Base visual */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+
+/* Títulos */
+h1, h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Contenedor de formularios */
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+
+/* Etiquetas y campos */
+.form-group label {
+  display: block;
+  margin: 12px 0;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  margin-top: 4px;
+  border-radius: 4px;
+}
+
+/* Colores y branding */
+.bg-olivo {
+  background-color: #556b2f;
+  color: #fff;
+}
+
+/* Estilo tabla Excel */
+.excel-style {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.excel-style th {
+  background-color: #e5efe5;
+  color: #333;
+  font-weight: bold;
+  border: 1px solid #d0dbd0;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.excel-style td {
+  border: 1px solid #e0e0e0;
+  padding: 8px;
+  text-align: center;
+  font-size: 13px;
+  color: #444;
+}
+
+.excel-style tr:hover td {
+  background-color: #f9fcf9;
+}
+
+.gran-total-row td {
+  background-color: #cce4cc;
+  font-weight: bold;
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+/* Opcional: encabezado pegajoso si la tabla se hace scroll */
+.excel-style thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+
+/* Campo cantidad con comportamiento visual especial */
+.cantidad-clickable {
+  cursor: pointer;
+  background-color: #fffdf0;
+}
+
+/* Cards resumen de socios */
+.card.border-success {
+  border-width: 2px;
+}
+
+.card-header.bg-olivo {
+  background-color: #556b2f;
+  color: #fff;
+}
+
+.card-body p {
+  margin-bottom: 0.6rem;
+}
