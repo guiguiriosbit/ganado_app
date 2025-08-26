@@ -1,5 +1,5 @@
 import React from 'react'
-import { Cow } from 'lucide-react'
+import { Cog as Cow } from 'lucide-react'
 
 interface HeaderProps {
   title: string
