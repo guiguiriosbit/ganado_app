@@ -22,32 +22,36 @@ Sistema de gestión de ganado desarrollado con React, TypeScript, Tailwind CSS y
 
 ## Instalación
 
-1. Clona el repositorio:
-```bash
-git clone https://github.com/tu-usuario/ganado-app-react.git
-cd ganado-app-react
-```
-
-2. Instala las dependencias:
+1. Instala las dependencias:
 ```bash
 npm install
 ```
 
-3. Configura las variables de entorno:
-```bash
-cp .env.example .env
-```
+2. **IMPORTANTE**: Configura Supabase siguiendo la guía en `SETUP.md`
 
-4. Edita el archivo `.env` con tus credenciales de Supabase:
+3. Edita el archivo `.env` con tus credenciales de Supabase:
 ```env
 VITE_SUPABASE_URL=tu_url_de_supabase
 VITE_SUPABASE_ANON_KEY=tu_clave_anonima_de_supabase
 ```
 
+4. Ejecuta el script SQL en Supabase (ver `SETUP.md`)
+
 5. Inicia el servidor de desarrollo:
 ```bash
 npm run dev
 ```
+
+## ⚠️ Configuración Requerida
+
+**Antes de usar la aplicación, debes configurar Supabase:**
+
+1. Lee el archivo `SETUP.md` para instrucciones detalladas
+2. Crea tu proyecto en Supabase
+3. Ejecuta el script de migración incluido
+4. Configura las variables de entorno
+
+La aplicación incluye un indicador de estado de conexión que te ayudará a verificar si todo está configurado correctamente.
 
 ## Estructura del Proyecto
 

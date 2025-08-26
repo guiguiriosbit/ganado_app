@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Header } from './components/Header'
+import { ConnectionStatus } from './components/ConnectionStatus'
 import { NavigationButtons } from './components/NavigationButtons'
 import { SocioForm } from './components/SocioForm'
 import { TipoGanadoModal } from './components/TipoGanadoModal'
@@ -230,6 +231,8 @@ function App() {
       <NavigationButtons activeView={activeView} onViewChange={setActiveView} />
       
       <main className="container mx-auto px-4 py-8">
+        <ConnectionStatus />
+        
         {error && (
           <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6 flex items-center gap-2">
             <AlertCircle className="w-5 h-5 text-red-600" />
